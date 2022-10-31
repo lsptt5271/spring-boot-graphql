@@ -1,0 +1,10 @@
+{
+    "name": "SpringBoot Graphql Devcontainer",
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/usr/local/app",
+    "extensions": [
+        "vscjava.vscode-java-pack",
+        "pivotal.vscode-boot-dev-pack"
+    ]
+}   
