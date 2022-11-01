@@ -26,8 +26,11 @@ public class EmployeeEntity {
     private int id;
     @Column(name = "name")
     private String name;
+    @Column(name = "department_id")
+    private int departmentId;
+
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "department_id")
+    @JoinColumn(name = "department_id", insertable = false, updatable = false)
     private DepartmentEntity department;
 
 }
